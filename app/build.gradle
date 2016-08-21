@@ -132,9 +132,9 @@ task deployGoogleDrive(type: by.dev.madhead.gbp.tasks.gdrive.GoogleDriveUploadTa
 
 //Add checkstyle as the first task.
 project.afterEvaluate {
-    preBuild.dependsOn checkStyle
-    coverageReport.dependsOn testDebugUnitTest
-	test.dependsOn coverageReport
+    //preBuild.dependsOn checkStyle
+    //coverageReport.dependsOn testDebugUnitTest
+    //test.dependsOn coverageReport
 }
 
 dependencies {
