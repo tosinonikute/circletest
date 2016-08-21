@@ -112,15 +112,15 @@ def deleteUnalignedFiles(variant) {
 }
 
 task obtainGoogleDriveTokens(type: by.dev.madhead.gbp.tasks.gdrive.ObtainGoogleDriveTokensTask) {
-    clientId = System.getenv("GDRIVE_CLIENT_ID")
-    clientSecret = System.getenv("GDRIVE_CLIENT_SECRET")
+    //clientId = System.getenv("GDRIVE_CLIENT_ID")
+    //clientSecret = System.getenv("GDRIVE_CLIENT_SECRET")
 }
 
 task deployGoogleDrive(type: by.dev.madhead.gbp.tasks.gdrive.GoogleDriveUploadTask) {
-    clientId = System.getenv('GDRIVE_CLIENT_ID')
-    clientSecret = System.getenv('GDRIVE_CLIENT_SECRET')
-    accessToken = System.getenv('GDRIVE_ACCESS_TOKEN')
-    refreshToken = System.getenv('GDRIVE_REFRESH_TOKEN')
+    //clientId = System.getenv('GDRIVE_CLIENT_ID')
+    //clientSecret = System.getenv('GDRIVE_CLIENT_SECRET')
+    //accessToken = System.getenv('GDRIVE_ACCESS_TOKEN')
+    //refreshToken = System.getenv('GDRIVE_REFRESH_TOKEN')
 
     dependsOn packageArtifacts                 // 1
     mimeType = 'application/zip'         // 2
